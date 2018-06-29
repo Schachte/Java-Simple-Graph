@@ -60,6 +60,11 @@ public class GraphImpl implements Graph {
   }
 
   @Override
+  public void removeNode(Node node) {
+    nodes.remove(node);
+  }
+
+  @Override
   public void levelOrderPrint() {
     throw new NotImplementedException();
   }

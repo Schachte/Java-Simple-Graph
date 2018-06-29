@@ -60,6 +60,11 @@ public class NodeImpl implements Node<String, Integer> {
       LOGGER.info("Node already exists... Ignoring operation");
   }
 
+  public void removeConnection(Node destinationNode) {
+    if (edgeAdjacency.containsKey(destinationNode))
+      edgeAdjacency.remove(destinationNode);
+  }
+
   public void addConnection(Node destinationNode) {
     if (!edgeAdjacency.containsKey(destinationNode))
       edgeAdjacency.put(destinationNode, new EdgeImpl(destinationNode));

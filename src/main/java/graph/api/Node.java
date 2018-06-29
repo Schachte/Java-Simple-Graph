@@ -85,4 +85,10 @@ public interface Node<T, U extends Comparable<?>> {
    * @return node list
    */
   List<Node<String, Integer>> getAdjacentNodes();
+
+  /**
+   * Deletes an edge connection
+   * @param destinationNode
+   */
+  void removeConnection(Node destinationNode);
 }

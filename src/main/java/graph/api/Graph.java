@@ -45,6 +45,12 @@ public interface Graph {
   void addNodes(List<Node> nodes);
 
   /**
+   * Deletes a node from the graph
+   * @param node
+   */
+  void removeNode(Node node);
+
+  /**
    * Prints the node values level-order
    */
   void levelOrderPrint();
