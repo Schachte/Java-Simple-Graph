@@ -27,6 +27,20 @@ public interface Graph {
   void setRootNode(Node root);
 
   /**
+   * Finds a given {@link Node} by the name
+   * @param node
+   * @return Node
+   */
+  Node findNode(String node);
+
+  /**
+   * Finds a given {@link Node} by the value
+   * @param node
+   * @return
+   */
+  Node findNode(int node);
+
+  /**
    * Adds a singular {@link Node} to a {@link Graph}
    * @param node
    */

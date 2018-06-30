@@ -34,6 +34,26 @@ public class GraphImpl implements Graph {
   }
 
   @Override
+  public Node findNode(String node) {
+    for (Node n : nodes) {
+      if (n.getNodeName().equals(node)) {
+        return n;
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public Node findNode(int node) {
+    for (Node n : nodes) {
+      if (n.getNodeData().equals(node)) {
+        return n;
+      }
+    }
+    return null;
+  }
+
+  @Override
   public void addNode(Node node) {
     if (!this.nodes.contains(node)) {
       nodes.add(node);
