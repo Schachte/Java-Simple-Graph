@@ -91,4 +91,28 @@ public interface Node<T, U extends Comparable<?>> {
    * @param destinationNode
    */
   void removeConnection(Node destinationNode);
+
+  /**
+   * Used for binary trees
+   * @param left
+   */
+  void addLeftChild(Node left);
+
+  /**
+   * Used for binary trees
+   * @param right
+   */
+  void addRightChild(Node right);
+
+  /**
+   * Used for retrieving right child in a binary tree
+   * @return
+   */
+  Node getRight();
+
+  /**
+   * Used for retrieving left child in a binary tree
+   * @return
+   */
+  Node getLeft();
 }

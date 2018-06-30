@@ -21,6 +21,10 @@ public class NodeImpl implements Node<String, Integer> {
 
   private Map<Node<String, Integer>, Edge> edgeAdjacency = new HashMap<>();
 
+  private Node leftChild = null;
+
+  private Node rightChild = null;
+
   public NodeImpl(String nodeName, int nodeValue) {
     this.nodeName = nodeName;
     this.nodeValue = nodeValue;
@@ -63,6 +67,26 @@ public class NodeImpl implements Node<String, Integer> {
   public void removeConnection(Node destinationNode) {
     if (edgeAdjacency.containsKey(destinationNode))
       edgeAdjacency.remove(destinationNode);
+  }
+
+  @Override
+  public void addLeftChild(Node left) {
+    this.leftChild = left;
+  }
+
+  @Override
+  public void addRightChild(Node right) {
+    this.rightChild = right;
+  }
+
+  @Override
+  public Node getRight() {
+    return this.rightChild;
+  }
+
+  @Override
+  public Node getLeft() {
+    return this.leftChild;
   }
 
   public void addConnection(Node destinationNode) {
