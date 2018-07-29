@@ -1,9 +1,9 @@
 package graph.example;
 
-import graph.api.Graph;
-import graph.api.Node;
+import common.api.Graph;
+import common.api.Node;
 import graph.impl.GraphImpl;
-import graph.impl.NodeImpl;
+import common.impl.NodeImpl;
 import java.util.ArrayList;
 import java.util.List;
 

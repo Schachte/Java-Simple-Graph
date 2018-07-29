@@ -2,14 +2,13 @@ package graph.impl;
 
 import static org.junit.Assert.*;
 
-import graph.api.Graph;
-import graph.api.Node;
-import graph.exceptions.NodeException.NonExistentNodeException;
+import common.api.Graph;
+import common.api.Node;
+import common.impl.NodeImpl;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class GraphImplTest {
 
@@ -75,11 +74,6 @@ public class GraphImplTest {
     assertTrue(g.getAllNodes().contains(testNode4));
   }
 
-  @Test(expected = NonExistentNodeException.class)
-  public void getRootFails() {
-    g.getRoot();
-  }
-
   @Test
   public void getRootSucceeds() {
     g.setRootNode(testNode);
@@ -136,22 +130,22 @@ public class GraphImplTest {
     assertTrue(g.getAllNodes().contains(newTestNode2));
   }
 
-  @Test(expected = NotImplementedException.class)
+  @Test(expected = UnsupportedOperationException.class)
   public void levelOrderPrint() {
     g.levelOrderPrint();
   }
 
-  @Test(expected = NotImplementedException.class)
+  @Test(expected = UnsupportedOperationException.class)
   public void preOrderPrint() {
     g.preOrderPrint();
   }
 
-  @Test(expected = NotImplementedException.class)
+  @Test(expected = UnsupportedOperationException.class)
   public void postOrderPrint() {
     g.postOrderPrint();
   }
 
-  @Test(expected = NotImplementedException.class)
+  @Test(expected = UnsupportedOperationException.class)
   public void inOrderPrint() {
     g.inOrderPrint();
   }

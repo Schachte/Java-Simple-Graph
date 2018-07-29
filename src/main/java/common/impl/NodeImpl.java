@@ -1,8 +1,10 @@
-package graph.impl;
+package common.impl;
 
-import graph.api.Edge;
-import graph.api.Node;
+import common.api.Edge;
+import common.api.Node;
 import graph.exceptions.NodeException.EdgeInvalidException;
+import graph.impl.EdgeImpl;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -55,6 +57,11 @@ public class NodeImpl implements Node<String, Integer> {
 
   public String getNodeName() {
     return this.nodeName;
+  }
+
+  @Override
+  public int getVal() {
+    return nodeValue;
   }
 
   public void addConnection(Node destinationNode, double weight) {

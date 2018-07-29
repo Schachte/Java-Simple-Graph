@@ -1,4 +1,4 @@
-package graph.api;
+package common.api;
 
 import java.util.List;
 import java.util.Map;
@@ -21,6 +21,8 @@ public interface Node<T, U extends Comparable<?>> {
    * @return T {@link Node#getNodeName()}
    */
   T getNodeName();
+
+  int getVal();
 
   /**
    * Gets all metadata for a particular {@link Node}

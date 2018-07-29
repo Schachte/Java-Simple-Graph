@@ -1,4 +1,4 @@
-package graph.api;
+package common.api;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package graph.api;
+package common.api;
 
 /**
  * Represents the directed link between two {@link Node} objects and may contain

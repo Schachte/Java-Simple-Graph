@@ -1,7 +1,7 @@
 package graph.impl;
 
-import graph.api.Edge;
-import graph.api.Node;
+import common.api.Edge;
+import common.api.Node;
 
 public class EdgeImpl implements Edge {
 

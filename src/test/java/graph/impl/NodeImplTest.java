@@ -2,12 +2,13 @@ package graph.impl;
 
 import static org.junit.Assert.*;
 
-import graph.api.Node;
+import common.api.Node;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.junit.Before;
+
+import common.impl.NodeImpl;
 import org.junit.Test;
 
 public class NodeImplTest {

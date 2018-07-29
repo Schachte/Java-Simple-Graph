@@ -1,12 +1,10 @@
 package graph.impl;
 
-import graph.api.Graph;
-import graph.api.Node;
-import graph.exceptions.NodeException.NonExistentNodeException;
+import common.api.Graph;
+import common.api.Node;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class GraphImpl implements Graph {
 
@@ -24,7 +22,7 @@ public class GraphImpl implements Graph {
 
   @Override
   public Node getRoot() {
-    if (root == null) throw new NonExistentNodeException("Root node on graph is null");
+//    if (root == null) throw new NonExistentNodeException("Root node on graph is null");
     return root;
   }
 
@@ -86,21 +84,21 @@ public class GraphImpl implements Graph {
 
   @Override
   public void levelOrderPrint() {
-    throw new NotImplementedException();
+      throw new UnsupportedOperationException();
   }
 
   @Override
   public void preOrderPrint() {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public void postOrderPrint() {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public void inOrderPrint() {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 }

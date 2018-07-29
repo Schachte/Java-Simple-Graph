@@ -2,8 +2,9 @@ package graph.impl;
 
 import static org.junit.Assert.*;
 
-import graph.api.Edge;
-import graph.api.Node;
+import common.api.Edge;
+import common.api.Node;
+import common.impl.NodeImpl;
 import org.junit.Test;
 
 public class EdgeImplTest {

@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../graph/api/Graph.html" title="interface in graph.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../graph/api/Graph.html" title="interface in common.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -91,7 +91,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">graph.api</div>
+<div class="subTitle">common.api</div>
 <h2 title="Interface Node" class="title">Interface Node&lt;T,U extends java.lang.Comparable&lt;?&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -106,8 +106,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">Node&lt;T,U extends java.lang.Comparable&lt;?&gt;&gt;</span></pre>
 <div class="block">Represents the core data structure that will make up the
- main <a href="../../graph/api/Graph.html" title="interface in graph.api"><code>Graph</code></a> component. Designed to be generic but still adhere to standard
- graph properties for genericized <a href="../../graph/api/Graph.html" title="interface in graph.api"><code>Graph</code></a> creation.</div>
+ main <a href="../../graph/api/Graph.html" title="interface in common.api"><code>Graph</code></a> component. Designed to be generic but still adhere to standard
+ graph properties for genericized <a href="../../graph/api/Graph.html" title="interface in common.api"><code>Graph</code></a> creation.</div>
 </li>
 </ul>
 </div>
@@ -128,77 +128,77 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#addConnection-graph.api.Node-">addConnection</a></span>(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode)</code>
-<div class="block">Adds a connection to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> and a default weight will be given</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#addConnection-graph.api.Node-">addConnection</a></span>(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode)</code>
+<div class="block">Adds a connection to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> and a default weight will be given</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#addConnection-graph.api.Node-double-">addConnection</a></span>(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#addConnection-graph.api.Node-double-">addConnection</a></span>(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode,
              double&nbsp;weight)</code>
-<div class="block">Adds a directed edge connection to a destination <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a specified weight</div>
+<div class="block">Adds a directed edge connection to a destination <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a specified weight</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-int-java.util.List-">bulkAddConnections</a></span>(int&nbsp;weight,
-                  java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&gt;&nbsp;childNodes)</code>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a constant weight</div>
+                  java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&gt;&nbsp;childNodes)</code>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a constant weight</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-int-graph.api.Node...-">bulkAddConnections</a></span>(int&nbsp;weight,
-                  <a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>...&nbsp;childNodes)</code>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a constant weight</div>
+                  <a href="../../graph/api/Node.html" title="interface in common.api">Node</a>...&nbsp;childNodes)</code>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a constant weight</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-java.util.List-">bulkAddConnections</a></span>(java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&gt;&nbsp;childNodes)</code>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a default weight of 0</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-java.util.List-">bulkAddConnections</a></span>(java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&gt;&nbsp;childNodes)</code>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a default weight of 0</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-graph.api.Node...-">bulkAddConnections</a></span>(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>...&nbsp;childNodes)</code>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a default weight of 0</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#bulkAddConnections-graph.api.Node...-">bulkAddConnections</a></span>(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>...&nbsp;childNodes)</code>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a default weight of 0</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&lt;java.lang.String,java.lang.Integer&gt;&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&lt;java.lang.String,java.lang.Integer&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getAdjacentNodes--">getAdjacentNodes</a></span>()</code>
-<div class="block">Retrieves all adjacent nodes for a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Retrieves all adjacent nodes for a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getEdgeWeight-graph.api.Node-">getEdgeWeight</a></span>(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode)</code>
-<div class="block">Retrieves a weight for a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getEdgeWeight-graph.api.Node-">getEdgeWeight</a></span>(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode)</code>
+<div class="block">Retrieves a weight for a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../graph/api/Node.html" title="type parameter in Node">U</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getNodeData--">getNodeData</a></span>()</code>
-<div class="block">Retrieves the data associated with a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Retrieves the data associated with a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../graph/api/Node.html" title="type parameter in Node">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getNodeName--">getNodeName</a></span>()</code>
-<div class="block">Retrieves the name value for a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Retrieves the name value for a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.lang.Object&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#getProps--">getProps</a></span>()</code>
-<div class="block">Gets all metadata for a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Gets all metadata for a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../graph/api/Node.html#retrieveProp-java.lang.String-">retrieveProp</a></span>(java.lang.String&nbsp;key)</code>
-<div class="block">Allows retrieval of a value on a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> <code>String</code> key</div>
+<div class="block">Allows retrieval of a value on a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> <code>String</code> key</div>
 </td>
 </tr>
 </table>
@@ -223,7 +223,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getNodeData</h4>
 <pre><a href="../../graph/api/Node.html" title="type parameter in Node">U</a>&nbsp;getNodeData()</pre>
-<div class="block">Retrieves the data associated with a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Retrieves the data associated with a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>U <a href="../../graph/api/Node.html#getNodeData--"><code>getNodeData()</code></a></dd>
@@ -237,7 +237,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getNodeName</h4>
 <pre><a href="../../graph/api/Node.html" title="type parameter in Node">T</a>&nbsp;getNodeName()</pre>
-<div class="block">Retrieves the name value for a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Retrieves the name value for a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>T <a href="../../graph/api/Node.html#getNodeName--"><code>getNodeName()</code></a></dd>
@@ -251,7 +251,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getProps</h4>
 <pre>java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;getProps()</pre>
-<div class="block">Gets all metadata for a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<div class="block">Gets all metadata for a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Map of node metadata</dd>
@@ -265,7 +265,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>retrieveProp</h4>
 <pre>java.lang.Object&nbsp;retrieveProp(java.lang.String&nbsp;key)</pre>
-<div class="block">Allows retrieval of a value on a particular <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> <code>String</code> key</div>
+<div class="block">Allows retrieval of a value on a particular <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> <code>String</code> key</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 </dl>
@@ -277,9 +277,9 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>addConnection</h4>
-<pre>void&nbsp;addConnection(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode,
+<pre>void&nbsp;addConnection(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode,
                    double&nbsp;weight)</pre>
-<div class="block">Adds a directed edge connection to a destination <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a specified weight</div>
+<div class="block">Adds a directed edge connection to a destination <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a specified weight</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>destinationNode</code> - </dd>
@@ -293,8 +293,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>addConnection</h4>
-<pre>void&nbsp;addConnection(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode)</pre>
-<div class="block">Adds a connection to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> and a default weight will be given</div>
+<pre>void&nbsp;addConnection(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode)</pre>
+<div class="block">Adds a connection to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> and a default weight will be given</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>destinationNode</code> - </dd>
@@ -307,8 +307,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getEdgeWeight</h4>
-<pre>double&nbsp;getEdgeWeight(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&nbsp;destinationNode)</pre>
-<div class="block">Retrieves a weight for a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<pre>double&nbsp;getEdgeWeight(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&nbsp;destinationNode)</pre>
+<div class="block">Retrieves a weight for a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>destinationNode</code> - </dd>
@@ -324,8 +324,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>bulkAddConnections</h4>
 <pre>void&nbsp;bulkAddConnections(int&nbsp;weight,
-                        <a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>...&nbsp;childNodes)</pre>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a constant weight</div>
+                        <a href="../../graph/api/Node.html" title="interface in common.api">Node</a>...&nbsp;childNodes)</pre>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a constant weight</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>weight</code> - </dd>
@@ -339,8 +339,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>bulkAddConnections</h4>
-<pre>void&nbsp;bulkAddConnections(<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>...&nbsp;childNodes)</pre>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a default weight of 0</div>
+<pre>void&nbsp;bulkAddConnections(<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>...&nbsp;childNodes)</pre>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a default weight of 0</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>childNodes</code> - </dd>
@@ -353,8 +353,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>bulkAddConnections</h4>
-<pre>void&nbsp;bulkAddConnections(java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&gt;&nbsp;childNodes)</pre>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a default weight of 0</div>
+<pre>void&nbsp;bulkAddConnections(java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&gt;&nbsp;childNodes)</pre>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a default weight of 0</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>childNodes</code> - </dd>
@@ -368,8 +368,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>bulkAddConnections</h4>
 <pre>void&nbsp;bulkAddConnections(int&nbsp;weight,
-                        java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&gt;&nbsp;childNodes)</pre>
-<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a> with a constant weight</div>
+                        java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&gt;&nbsp;childNodes)</pre>
+<div class="block">Enables adding N number of directed edges to a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a> with a constant weight</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>weight</code> - </dd>
@@ -383,8 +383,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAdjacentNodes</h4>
-<pre>java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in graph.api">Node</a>&lt;java.lang.String,java.lang.Integer&gt;&gt;&nbsp;getAdjacentNodes()</pre>
-<div class="block">Retrieves all adjacent nodes for a given <a href="../../graph/api/Node.html" title="interface in graph.api"><code>Node</code></a></div>
+<pre>java.util.List&lt;<a href="../../graph/api/Node.html" title="interface in common.api">Node</a>&lt;java.lang.String,java.lang.Integer&gt;&gt;&nbsp;getAdjacentNodes()</pre>
+<div class="block">Retrieves all adjacent nodes for a given <a href="../../graph/api/Node.html" title="interface in common.api"><code>Node</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>node list</dd>
@@ -418,7 +418,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../graph/api/Graph.html" title="interface in graph.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../graph/api/Graph.html" title="interface in common.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
