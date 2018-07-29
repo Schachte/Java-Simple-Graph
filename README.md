@@ -5,3 +5,5 @@
 
 > Java API that faciliates graph & tree creation for algorithm review/prep.
 
+- Simple Graph & Tree API for algorithms
+- Auto generation support for BSTs of custom ranges
