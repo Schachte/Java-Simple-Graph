@@ -7,6 +7,7 @@ import tree.api.BST;
 import java.util.Random;
 
 public class BSTImpl implements BST {
+    private Random r = new Random();
     private Node rootVal;
 
     public BSTImpl(final int rootVal) {
@@ -14,12 +15,22 @@ public class BSTImpl implements BST {
     }
 
     /**
-     * Generates a BST with N nodes between 1 & 1000
+     * Generates a BST with N nodes between 0 & 1000
      */
     public Node autoGenerate(int numberNodes) {
-        Random random = new Random();
         for (int i = 0; i < numberNodes; i++) {
-            insert(rootVal, random.nextInt(1001));
+            insert(rootVal, r.nextInt(1001));
+        }
+        return this.rootVal;
+    }
+
+    /**
+     * Generates a BST with N nodes between X & Y
+     */
+    public Node autoGenerate(int numberNodes, int low, int high) {
+        int result = r.nextInt(high-low) + low;
+        for (int i = 0; i < numberNodes; i++) {
+            insert(rootVal, result);
         }
         return this.rootVal;
     }
